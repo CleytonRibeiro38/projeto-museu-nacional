@@ -1,0 +1,54 @@
+/*==========RESET==========*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background: #f4f2ec url(../imagens/fundo.png) repeat-x;
+    font: 12px "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+}
+/*==========CONTAINER==========*/
+.container{
+    width: 1080px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "content content aside"
+    "footer footer footer"
+    ;
+}
+.header {grid-area: header;}
+.content {grid-area: content;}
+.aside {grid-area: aside;}
+.footer {grid-area: footer;}
+/*==========HEADER==========*/
+.header {display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; padding: 30px 0;}
+.header a {margin-bottom: 30px;}
+.menu {display: flex; margin-bottom: 30px;}
+.menu li a {color: #af670a; text-transform: uppercase;}
+.menu li a:hover {color: green; text-decoration: underline;}
+.menu li + li {margin-left: 25px;}
+/*==========CONTENT==========*/
+.content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 25px;
+    margin-top: -13px;
+}
+.content ul li a {color: #af670a;}
+.content ul li a:hover {color: green;}
+.content ul li:last-child {font-weight: bold;}
+.content01 h3, .content02 h3 {font-size: 1.0em; color: #227115; text-transform: uppercase;}
+.content01 iframe, .content02 iframe {margin: 15px 0 30px 0;}
+.content01 {margin-right: 37px;}
+.content01 ul {margin-top: 15px;}
+.content01 ul li {list-style: inside; margin-left: 25px;}
+.content01 {grid-column: 1;}
+.content02 {grid-column: 2;}
+.content02 p {margin: 15px 0;}
+.content02 a {color: #af670a; font-weight: bold;}

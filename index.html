@@ -22,11 +22,12 @@
                 <li><a href="#">Fotos</a></li>
                 <li><a href="#">Contato</a></li>
             </ul>
+            <img src="imagens/museu.png" alt="Museu">
+            <img src="imagens/depoimento.png" alt="Depoimento">
         </header>
 
         <!--CONTENT-->
         <section class="content">
-            <img src="imagens/museu.png" alt="Museu">
             <div class="content01">
                 <h3>Vídeo: Conheça o Museu.</h3>
                 <iframe width="310" height="170" src="https://www.youtube.com/embed/RGUYb-hivrc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -41,7 +42,7 @@
                 </ul>
             </div>
             <div class="content02">
-                <h3>Mapa: Encontro o Museu</h3>
+                <h3>Mapa: Encontre o Museu</h3>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.206311665319!2d-43.228717585034445!3d-22.90575998501238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e58a085b7af%3A0x4d11e9a933d38ce3!2sMuseu+Nacional+-+UFRJ!5e0!3m2!1spt-BR!2sbr!4v1537538326477" width="310" height="170" frameborder="0" style="border:0" allowfullscreen=""></iframe>
                 <h3>200 Anos de História</h3>
                 <p>Numa ponta que avançava sobre o mar, posteriormente conhecida como Ponta do Calabouço, entre as praias de Piaçaba e Santa Luzia, no centro histórico do Rio de Janeiro, os portugueses construíram em 1603 a Fortaleza de Santiago, origem do conjunto arquitetônico que hoje abriga o Museu Histórico Nacional.</p>
@@ -51,11 +52,12 @@
 
         <!--ASIDE-->
         <aside class="aside">
-            <img src="imagens/depoimento.png" alt="Depoimento">
             <h3>Faça uma visita</h3>
             <form action="">
-                <input type="date">
-                <input type="number"><br>
+                <label for="date">Data</label>
+                <input type="date" id="date" name="date">
+                <label for="qtd-pessoas">Qtd pessoas</label>
+                <input type="number" id="qtd-pessoas" name="qtd-pessoas" min="1" max="100" value="1"><br>
                 <button type="submit">Verificar Disponibilidade</button>
             </form>
             <h3>Galeria de Fotos</h3>
