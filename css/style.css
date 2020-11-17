@@ -52,3 +52,24 @@ body{
 .content02 {grid-column: 2;}
 .content02 p {margin: 15px 0;}
 .content02 a {color: #af670a; font-weight: bold;}
+/*==========ASIDE==========*/
+.aside {margin-left: 10px;}
+.aside01 {background: #cdc8b1; padding: 27px; margin-top: -15px;}
+.aside01 h4 {color: #86521a; text-transform: uppercase; padding-bottom: 3px; margin-bottom: 5px;}
+.aside01 form label:first-child {margin-left: 10px;}
+.aside01 form input {margin-bottom: 10px; border: 1px solid #ada484;}
+input[type="date"]{width: 130px;}
+input[type="number"]{width: 30px; padding: 2px;}
+.aside01 form button {width: 100%; padding: 10px 0; background: #9b9271; color: white; height: 40px; font-size: 1.2em;
+border: none;}
+.aside02 {background-color: #ebe7dd; padding: 30px;}
+.aside02 h4 {color: #86521a; text-transform: uppercase; margin-top: -15px;}
+.aside02 .galeria {display: flex; flex-wrap: wrap; padding: 19px;}
+.aside02 .foto01 {width: 126px; height: 133px; background-image: url(../imagens/fundo-foto.png);}
+.aside02 .foto01 img {position: relative; top: 20px; left: 18px;}
+.aside02 .foto02 {width: 126px; height: 133px; background-image: url(../imagens/fundo-foto.png);}
+.aside02 .foto02 img {position: relative; top: 20px; left: 18px;}
+.aside02 .foto03 {width: 126px; height: 133px; background-image: url(../imagens/fundo-foto.png);}
+.aside02 .foto03 img {position: relative; top: 20px; left: 18px;}
+.aside02 .foto04 {width: 126px; height: 133px; background-image: url(../imagens/fundo-foto.png);}
+.aside02 .foto04 img {position: relative; top: 20px; left: 18px;}
