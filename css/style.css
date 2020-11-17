@@ -73,3 +73,12 @@ border: none;}
 .aside02 .foto03 img {position: relative; top: 20px; left: 18px;}
 .aside02 .foto04 {width: 126px; height: 133px; background-image: url(../imagens/fundo-foto.png);}
 .aside02 .foto04 img {position: relative; top: 20px; left: 18px;}
+/*==========FOOTER==========*/
+.footer {background: url(../imagens/fundo-rodape.png) no-repeat center top; margin-top: 20px; margin-bottom: 50px;}
+.footer p {text-align: center;}
+.footer p a {color: #af670a; margin: 0 10px;}
+.footer p a:hover {color: green;}
+.menu-footer {display: flex; justify-content: center; margin-top: 40px;}
+.menu-footer li {margin-left: 20px; margin-bottom: 15px;}
+.menu-footer li a {color: #af670a;}
+.menu-footer li a:hover {color: green;}
