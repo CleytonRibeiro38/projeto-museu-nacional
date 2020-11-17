@@ -10,6 +10,11 @@ body{
     background: #f4f2ec url(../imagens/fundo.png) repeat-x;
     font: 12px "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
 }
+@media screen and (max-width: 500px){
+    body{
+        background: none;
+    }
+}
 /*==========CONTAINER==========*/
 .container{
     width: 1080px;
@@ -26,6 +31,22 @@ body{
 .content {grid-area: content;}
 .aside {grid-area: aside;}
 .footer {grid-area: footer;}
+@media screen and (max-width: 500px){
+    .container{
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "content"
+        "aside"
+        "footer";
+    }
+    .header {grid-area: header;}
+    .content {grid-area: content;}
+    .aside {grid-area: aside;}
+    .footer {grid-area: footer;}
+}
 /*==========HEADER==========*/
 .header {display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; padding: 30px 0;}
 .header a {margin-bottom: 30px;}
@@ -33,6 +54,24 @@ body{
 .menu li a {color: #af670a; text-transform: uppercase;}
 .menu li a:hover {color: green; text-decoration: underline;}
 .menu li + li {margin-left: 25px;}
+@media screen and (max-width: 500px){
+    .header{
+        width: 100vw;
+        flex-direction: column;
+        background: #252117; 
+        padding: 20px 0 0 0;
+    }
+    header img:not(:first-child){
+        width: 100vw;
+    }
+    .menu{
+        flex-direction: column;
+    }
+    .menu li + li{
+        margin-top: 10px;
+        margin-left: 0;
+    }
+}
 /*==========CONTENT==========*/
 .content{
     display: grid;
@@ -52,6 +91,18 @@ body{
 .content02 {grid-column: 2;}
 .content02 p {margin: 15px 0;}
 .content02 a {color: #af670a; font-weight: bold;}
+@media screen and (max-width: 500px){
+    .content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 15px;
+        padding: 5px;
+    }
+    .content02{
+        margin-top: 15px;
+    }
+}
 /*==========ASIDE==========*/
 .aside {margin-left: 10px;}
 .aside01 {background: #cdc8b1; padding: 27px; margin-top: -15px;}
@@ -73,6 +124,35 @@ border: none;}
 .aside02 .foto03 img {position: relative; top: 20px; left: 18px;}
 .aside02 .foto04 {width: 126px; height: 133px; background-image: url(../imagens/fundo-foto.png);}
 .aside02 .foto04 img {position: relative; top: 20px; left: 18px;}
+@media screen and (max-width: 500px){
+    .aside{
+        width: 100vw;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .aside01{
+        padding: 10px;
+    }
+    input[type="date"]{
+        padding: 2px;
+    }
+    input[type="number"]{
+        width: 40px; 
+        padding: 2px;
+    }
+    .aside01 form label:first-child {
+        margin-left: 0;
+    }
+    .aside02{
+        padding: 10px;
+    }
+    .aside h4{
+        margin-top: 0;
+    }
+    .aside02 .galeria{
+        padding: 15px;
+    }
+}
 /*==========FOOTER==========*/
 .footer {background: url(../imagens/fundo-rodape.png) no-repeat center top; margin-top: 20px; margin-bottom: 50px;}
 .footer p {text-align: center;}
@@ -82,3 +162,10 @@ border: none;}
 .menu-footer li {margin-left: 20px; margin-bottom: 15px;}
 .menu-footer li a {color: #af670a;}
 .menu-footer li a:hover {color: green;}
+@media screen and (max-width: 500px){
+    .menu-footer{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15px;
+    }
+}
