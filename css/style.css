@@ -45,6 +45,22 @@ body{
     .aside {grid-area: aside;}
     .footer {grid-area: footer;}
 }
+@media screen and (min-width: 601px) and (max-width: 1000px){
+    .container{
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "header header"
+        "content content"
+        "aside aside"
+        "footer footer";
+    }
+    .header {grid-area: header;}
+    .content {grid-area: content;}
+    .aside {grid-area: aside;}
+    .footer {grid-area: footer;}
+}
 /*==========HEADER==========*/
 .header {display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; padding: 30px 0;}
 .header a {margin-bottom: 30px;}
@@ -57,6 +73,11 @@ body{
     header img:not(:first-child) {width: 100vw;}
     .menu {flex-direction: column;}
     .menu li + li {margin-top: 10px; margin-left: 0;}
+}
+@media screen and (min-width: 601px) and (max-width: 999px){
+    .header img {width: 50vw;}
+    .header img:nth-child(3) {height: 45.7vw;}
+    .header a, .menu {margin: 0 auto; margin-bottom: 30px;}
 }
 /*==========CONTENT==========*/
 .content{
@@ -82,6 +103,19 @@ body{
     .content01 h3, .content02 h3 {text-align: center;}
     .content01 iframe, .content02 iframe {display: block; margin: 15px auto;}
     .content02 {width: 100vw; margin-top: 15px;}
+}
+@media screen and (min-width: 601px) and (max-width: 999px){
+    .content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0 10px;
+        margin-top: -13px;
+        margin-bottom: 30px;
+    }
+    .content01 iframe, .content02 iframe{
+        width: 45vw;
+    }
+
 }
 /*==========ASIDE==========*/
 .aside {margin-left: 10px;}
@@ -113,6 +147,14 @@ border: none;}
     .aside02 {padding: 10px;}
     .aside h4 {margin-top: 0;}
     .aside02 .galeria {padding: 15px;}
+}
+@media screen and (min-width: 601px) and (max-width: 999px){
+    .aside {margin: 0 10px;}
+    .aside01 h4, .aside01 form {text-align: center;}
+    .aside01 form button {width: auto; padding: 0 10px;}
+    .aside02 h4 {text-align: center;}
+    .aside02 .galeria {padding: 0;}
+    .galeria {justify-content: center;}
 }
 /*==========FOOTER==========*/
 .footer {background: url(../imagens/fundo-rodape.png) no-repeat center top; margin-top: 20px; margin-bottom: 50px;}
