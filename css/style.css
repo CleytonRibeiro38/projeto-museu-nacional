@@ -45,7 +45,7 @@ body{
     .aside {grid-area: aside;}
     .footer {grid-area: footer;}
 }
-@media screen and (min-width: 601px) and (max-width: 1000px){
+@media screen and (min-width: 601px) and (max-width: 1079px){
     .container{
         width: 100vw;
         display: grid;
@@ -74,7 +74,7 @@ body{
     .menu {flex-direction: column;}
     .menu li + li {margin-top: 10px; margin-left: 0;}
 }
-@media screen and (min-width: 601px) and (max-width: 999px){
+@media screen and (min-width: 601px) and (max-width: 1079px){
     .header img {width: 50vw;}
     .header img:nth-child(3) {height: 45.7vw;}
     .header a, .menu {margin: 0 auto; margin-bottom: 30px;}
@@ -104,7 +104,7 @@ body{
     .content01 iframe, .content02 iframe {display: block; margin: 15px auto;}
     .content02 {width: 100vw; margin-top: 15px;}
 }
-@media screen and (min-width: 601px) and (max-width: 999px){
+@media screen and (min-width: 601px) and (max-width: 1079px){
     .content{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -148,7 +148,7 @@ border: none;}
     .aside h4 {margin-top: 0;}
     .aside02 .galeria {padding: 15px;}
 }
-@media screen and (min-width: 601px) and (max-width: 999px){
+@media screen and (min-width: 601px) and (max-width: 1079px){
     .aside {margin: 0 10px;}
     .aside01 h4, .aside01 form {text-align: center;}
     .aside01 form button {width: auto; padding: 0 10px;}
